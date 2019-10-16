@@ -5,6 +5,6 @@ def home(request):
     return render(request,'home.html')
 
 def count(request):
-    list=request.GET['words']
-    l=list.split()
+    y=request.GET['text']
+    l=y.split()
     return render(request, 'count.html', {'xyz': len(l)})
