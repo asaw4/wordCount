@@ -1,1 +1,18 @@
-{{xyz}}
+<nav>
+  <a href="{% url 'home' %}"> Home</a> |
+  <a href="{% url 'about' %}">About</a> |
+</nav>
+
+<h2>Total Words = {{xyz}}</h2>
+
+<br/>
+
+<h2> Text is : </h2>
+ {{ text }}
+
+<br/>
+{ % for word, value in dic.items % }
+{{ y }}
+{{ freq }}
+<br/>
+{ % endfor % }
